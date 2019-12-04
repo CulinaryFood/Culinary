@@ -9,6 +9,7 @@
         android:roundIcon="@drawable/top"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.ReegisterActivity"></activity>
         <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
