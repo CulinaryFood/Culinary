@@ -6,10 +6,13 @@ public class RestoModel {
     public String makanan;
     public String minuman;
 
-    public RestoModel(int image, String alamat, String makanan, String minuman, String name) {
+    public RestoModel(int image,  String name, String alamat) {
         this.image = image;
         this.name = name;
         this.alamat = alamat;
+
+    }
+    public RestoModel(String makanan, String minuman){
         this.makanan = makanan;
         this.minuman = minuman;
     }

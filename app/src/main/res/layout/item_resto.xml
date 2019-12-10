@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
     <ImageView
         android:id="@+id/gambar"
         android:layout_width="match_parent"
@@ -14,7 +15,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="SOLARIA"
         android:textColor="@color/coloryellow"
         android:textSize="30dp"
         android:textStyle="bold"></TextView>
@@ -22,9 +22,9 @@
     <TextView
         android:id="@+id/alamat"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
+        android:autoLink="all"
         android:textColor="@color/colorBlack"
-        android:textSize="30dp"
-        android:autoLink="all"/>
+        android:textSize="15dp" />
 
 </LinearLayout>

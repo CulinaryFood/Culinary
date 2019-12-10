@@ -3,6 +3,7 @@ package id.ac.polinema.culinaryfood.activities;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -23,14 +24,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void handlerClickMalang(View view) {
-        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.btnMalang);
-        if(fragment == null){
-            getSupportFragmentManager().beginTransaction()
-//                    .setCustomAnimations(R.anim.enter_from_left,R.anim.enter_from_right)
-                    .replace(R.id.btnMalang,new MalangFragment(), "SEARCH_FRAGMENT")
-                    .addToBackStack(null)
-                    .commit();
-        }
+        Intent intent = new Intent(this,MalangActivity.class);
+        startActivity(intent);
     }
 
     public void handlerClickJogja(View view) {
