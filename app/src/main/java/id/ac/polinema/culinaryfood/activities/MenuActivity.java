@@ -27,7 +27,7 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
 
         Bundle extras = getIntent().getExtras();
-        String code="";
+        String code="" , code_daerah;
 
         if(extras!=null)
         {

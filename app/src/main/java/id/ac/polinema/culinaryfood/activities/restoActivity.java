@@ -66,6 +66,28 @@ public class restoActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(restoActivity.this , MenuActivity.class);
+                    intent.putExtra("code_daerah","malang");
+                    intent.putExtra("kode_resto","solaria");
+                    startActivity(intent);
+                }
+            });
+
+            image2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(restoActivity.this , MenuActivity.class);
+                    intent.putExtra("code_daerah","malang");
+                    intent.putExtra("kode_resto","bensu");
+                    startActivity(intent);
+                }
+            });
+
+            image3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(restoActivity.this , MenuActivity.class);
+                    intent.putExtra("code_daerah","malang");
+                    intent.putExtra("kode_resto","nelongso");
                     startActivity(intent);
                 }
             });
@@ -86,6 +108,35 @@ public class restoActivity extends AppCompatActivity {
             image3.setBackgroundResource(R.drawable.lemah_ledok_garden);
             alamat3.setText("JJl. Cangkringan KM. 0,3, Tirtomartani, Karang Kalasan, Tirtomartani, Kec. Kalasan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55571");
 
+            image1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(restoActivity.this , MenuActivity.class);
+                    intent.putExtra("code_daerah","jogja");
+                    intent.putExtra("kode_resto","jejemuran");
+                    startActivity(intent);
+                }
+            });
+
+            image2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(restoActivity.this , MenuActivity.class);
+                    intent.putExtra("code_daerah","jogja");
+                    intent.putExtra("kode_resto","pelem_golek");
+                    startActivity(intent);
+                }
+            });
+
+            image3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(restoActivity.this , MenuActivity.class);
+                    intent.putExtra("code_daerah","jogja");
+                    intent.putExtra("kode_resto","ledok_garten");
+                    startActivity(intent);
+                }
+            });
         }
 
     }
@@ -107,10 +158,4 @@ public class restoActivity extends AppCompatActivity {
 //
 //    }
 
-    public void btn1(View view) {
-
-        Intent intent = new Intent(this , MenuActivity.class);
-        intent.putExtra("kode_resto","jejemuran");
-        startActivity(intent);
-    }
 }
