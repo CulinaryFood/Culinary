@@ -85,7 +85,10 @@ public class MalangActivity extends AppCompatActivity {
 
     public void resto_surabaya()
     {
-        restoModels.add(new RestoModel(R.drawable.jejamuran, "Jejamuran", " Jl. Pendowoharjo No.RT.01, RW.20, Niron, Pandowoharjo, Kec. Sleman, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55512"));
+        restoModels.add(new RestoModel(R.drawable.asian_king, "Asian King", "  Jl. Manyar Kertoarjo No.78, Manyar Sabrangan, Kec. Mulyorejo, Kota SBY, Jawa Timur 60116"));
+        restoModels.add(new RestoModel(R.drawable.primarasa, "Ayam Bakar Primarasa", " Fontage Rd Ahmad Yani No.166, Gayungan, Surabaya City, East Java 60235"));
+        restoModels.add(new RestoModel(R.drawable.kahyangan, "Kahyangan Resto", " Jl. Puri Widya Kencana, RW.05, Lidah Kulon, Kec. Lakarsantri, Kota SBY, Jawa Timur 60213"));
+
     }
 
     private void buildRecyclerView() {
