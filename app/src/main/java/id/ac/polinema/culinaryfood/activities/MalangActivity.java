@@ -71,8 +71,18 @@ public class MalangActivity extends AppCompatActivity {
     public void resto_jogja(){
 
         restoModels = new ArrayList<>();
-        restoModels.add(new RestoModel(R.drawable.solaria, "Solaria", " Kawi St No.24, 3, Kauman, Klojen, Malang City, East Java 65119"));
-        restoModels.add(new RestoModel(R.drawable.bensu, "Geprek Bensu", "Ruko Grand Suhat No, Jl. Soekarno Hatta No.6, Jatimulyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65141"));
+        restoModels.add(new RestoModel(R.drawable.jejamuran, "Jejamuran", " Jl. Pendowoharjo No.RT.01, RW.20, Niron, Pandowoharjo, Kec. Sleman, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55512"));
+        restoModels.add(new RestoModel(R.drawable.pelem_golek, "Pondok Makan Pelem Golek", "Jalan Palagan Tentara Pelajar KM.7 No.99, Sariharjo, Ngaglik, Mudal, Sariharjo, Kec. Ngaglik, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55581"));
+        restoModels.add(new RestoModel(R.drawable.lemah_ledok_garden, "Lemah Ledok Garden Resto", " Jl. Cangkringan KM. 0,3, Tirtomartani, Karang Kalasan, Tirtomartani, Kec. Kalasan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55571"));
+    }
+
+    public void resto_blitar()
+    {
+        restoModels.add(new RestoModel(R.drawable.jejamuran, "Jejamuran", " Jl. Pendowoharjo No.RT.01, RW.20, Niron, Pandowoharjo, Kec. Sleman, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55512"));
+    }
+
+    public void resto_surabaya()
+    {
 
     }
 
