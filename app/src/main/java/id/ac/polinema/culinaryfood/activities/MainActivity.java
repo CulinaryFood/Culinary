@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+
+
     public void handlerClickBlitar(View view) {
     }
 
@@ -25,9 +27,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void handlerClickMalang(View view) {
         Intent intent = new Intent(this,MalangActivity.class);
+        intent.putExtra("kode_resto","malang");
         startActivity(intent);
     }
 
     public void handlerClickJogja(View view) {
+        Intent intent = new Intent(this,MalangActivity.class);
+        intent.putExtra("kode_resto","jogja");
+        startActivity(intent);
     }
 }

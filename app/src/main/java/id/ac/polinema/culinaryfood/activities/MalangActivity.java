@@ -22,12 +22,31 @@ public class MalangActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private Adapters adapters;
     private RecyclerView.LayoutManager layoutManager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_malang);
 
-        resto_malang();
+        Bundle extras = getIntent().getExtras();
+        String code="";
+
+        if(extras!=null)
+        {
+            code = extras.getString("kode_resto");
+        }
+
+
+        //String code = args.putString("Judul", getIntent().getExtras().getString("Judul"));
+
+        if(code.equals("malang"))
+        {
+            resto_malang();
+        }
+        else if(code.equals("jogja"))
+        {
+            resto_jogja();
+        }
         buildRecyclerView();
     }
     private void filter(String text) {
@@ -47,6 +66,14 @@ public class MalangActivity extends AppCompatActivity {
         restoModels.add(new RestoModel(R.drawable.solaria, "Solaria", " Kawi St No.24, 3, Kauman, Klojen, Malang City, East Java 65119"));
         restoModels.add(new RestoModel(R.drawable.bensu, "Geprek Bensu", "Ruko Grand Suhat No, Jl. Soekarno Hatta No.6, Jatimulyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65141"));
         restoModels.add(new RestoModel(R.drawable.nelongso, "Ayam Nelongso", "Jl. Dieng, Sumberjo, Kalisongo, Kec. Dau, Malang, Jawa Timur 65116"));
+    }
+
+    public void resto_jogja(){
+
+        restoModels = new ArrayList<>();
+        restoModels.add(new RestoModel(R.drawable.solaria, "Solaria", " Kawi St No.24, 3, Kauman, Klojen, Malang City, East Java 65119"));
+        restoModels.add(new RestoModel(R.drawable.bensu, "Geprek Bensu", "Ruko Grand Suhat No, Jl. Soekarno Hatta No.6, Jatimulyo, Kec. Lowokwaru, Kota Malang, Jawa Timur 65141"));
+
     }
 
     private void buildRecyclerView() {
