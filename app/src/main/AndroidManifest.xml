@@ -9,6 +9,8 @@
         android:roundIcon="@drawable/top"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activities.LoginActivity"></activity>
+        <activity android:name=".activities.RegisterActivity" />
         <activity android:name=".activities.MenuActivity"></activity>
         <activity android:name=".activities.restoActivity" />
         <activity android:name=".activities.ItemRestoActivity" />

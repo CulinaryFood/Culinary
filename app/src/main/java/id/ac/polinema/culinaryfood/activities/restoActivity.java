@@ -94,6 +94,50 @@ public class restoActivity extends AppCompatActivity {
 
         }
 
+        else if(code.equals("blitar"))
+        {
+            nama1.setText("Warung Mak Nyak");
+            image1.setBackgroundResource(R.drawable.waroeng_mak_nyak);
+            alamat1.setText("Jl. Ir. Soekarno No.184, Bendogerit, Kec. Sananwetan, Kota Blitar, Jawa Timur 66113");
+
+            nama2.setText("RM Joglo");
+            image2.setBackgroundResource(R.drawable.rm_joglo);
+            alamat2.setText("Jalan Maluku No.59, Karangtengah, Kanigoro, Selatan, Kuningan, Kec. Kanigoro, Kota Blitar, Jawa Timur 66171");
+
+            nama3.setText("Soto Kudus Bu Is");
+            image3.setBackgroundResource(R.drawable.soto_kudus);
+            alamat3.setText("Jl. Jenderal Sudirman No.30, Kepanjen Lor, Kec. Kepanjenkidul, Kota Blitar, Jawa Timur 66112");
+
+            image1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(restoActivity.this , MenuActivity.class);
+                    intent.putExtra("code_daerah","blitar");
+                    intent.putExtra("kode_resto","warung_mak_nyak");
+                    startActivity(intent);
+                }
+            });
+
+            image2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(restoActivity.this , MenuActivity.class);
+                    intent.putExtra("code_daerah","blitar");
+                    intent.putExtra("kode_resto","rm_joglo");
+                    startActivity(intent);
+                }
+            });
+
+            image3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(restoActivity.this , MenuActivity.class);
+                    intent.putExtra("code_daerah","blitar");
+                    intent.putExtra("kode_resto","soto_kudus");
+                    startActivity(intent);
+                }
+            });
+        }
         else if(code.equals("jogja"))
         {
             nama1.setText("Jejamuran");
@@ -106,14 +150,14 @@ public class restoActivity extends AppCompatActivity {
 
             nama3.setText("Lemah Ledok Garden Resto");
             image3.setBackgroundResource(R.drawable.lemah_ledok_garden);
-            alamat3.setText("JJl. Cangkringan KM. 0,3, Tirtomartani, Karang Kalasan, Tirtomartani, Kec. Kalasan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55571");
+            alamat3.setText("Jl. Cangkringan KM. 0,3, Tirtomartani, Karang Kalasan, Tirtomartani, Kec. Kalasan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55571");
 
             image1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(restoActivity.this , MenuActivity.class);
                     intent.putExtra("code_daerah","jogja");
-                    intent.putExtra("kode_resto","jejemuran");
+                    intent.putExtra("kode_resto","jejamuran");
                     startActivity(intent);
                 }
             });
@@ -133,7 +177,51 @@ public class restoActivity extends AppCompatActivity {
                 public void onClick(View view) {
                     Intent intent = new Intent(restoActivity.this , MenuActivity.class);
                     intent.putExtra("code_daerah","jogja");
-                    intent.putExtra("kode_resto","ledok_garten");
+                    intent.putExtra("kode_resto","ledok_garden");
+                    startActivity(intent);
+                }
+            });
+        }
+        else if(code.equals("surabaya"))
+        {
+            nama1.setText("Asian King");
+            image1.setBackgroundResource(R.drawable.asian_king);
+            alamat1.setText("Jl. Manyar Kertoarjo No.78, Manyar Sabrangan, Kec. Mulyorejo, Kota SBY, Jawa Timur 60116");
+
+            nama2.setText("Ayam Bakar Primarasa");
+            image2.setBackgroundResource(R.drawable.primarasa);
+            alamat2.setText("Fontage Rd Ahmad Yani No.166, Gayungan, Surabaya City, East Java 60235");
+
+            nama3.setText("Kahyangan Resto");
+            image3.setBackgroundResource(R.drawable.kahyangan);
+            alamat3.setText("Jl. Puri Widya Kencana, RW.05, Lidah Kulon, Kec. Lakarsantri, Kota SBY, Jawa Timur 60213");
+
+            image1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(restoActivity.this , MenuActivity.class);
+                    intent.putExtra("code_daerah","surabaya");
+                    intent.putExtra("kode_resto","asian_king");
+                    startActivity(intent);
+                }
+            });
+
+            image2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(restoActivity.this , MenuActivity.class);
+                    intent.putExtra("code_daerah","surabaya");
+                    intent.putExtra("kode_resto","primarasa");
+                    startActivity(intent);
+                }
+            });
+
+            image3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(restoActivity.this , MenuActivity.class);
+                    intent.putExtra("code_daerah","surabaya");
+                    intent.putExtra("kode_resto","khayangan");
                     startActivity(intent);
                 }
             });
