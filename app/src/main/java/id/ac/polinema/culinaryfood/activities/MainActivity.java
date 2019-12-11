@@ -20,25 +20,25 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void handlerClickBlitar(View view) {
-        Intent intent = new Intent(this,MalangActivity.class);
-        intent.putExtra("kode_resto","Blitar");
+        Intent intent = new Intent(this,restoActivity.class);
+        intent.putExtra("kode_resto","blitar");
         startActivity(intent);
     }
 
     public void handlerClickSurabaya(View view) {
-        Intent intent = new Intent(this,MalangActivity.class);
-        intent.putExtra("kode_resto","Surabaya");
+        Intent intent = new Intent(this,restoActivity.class);
+        intent.putExtra("kode_resto","surabaya");
         startActivity(intent);
     }
 
     public void handlerClickMalang(View view) {
-        Intent intent = new Intent(this,MalangActivity.class);
+        Intent intent = new Intent(this,restoActivity.class);
         intent.putExtra("kode_resto","malang");
         startActivity(intent);
     }
 
     public void handlerClickJogja(View view) {
-        Intent intent = new Intent(this,MalangActivity.class);
+        Intent intent = new Intent(this,restoActivity.class);
         intent.putExtra("kode_resto","jogja");
         startActivity(intent);
     }

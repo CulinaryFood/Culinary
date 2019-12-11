@@ -47,6 +47,14 @@ public class MalangActivity extends AppCompatActivity {
         {
             resto_jogja();
         }
+        else if(code.equals("blitar"))
+        {
+            resto_blitar();
+        }
+        else if(code.equals("surabaya"))
+        {
+            resto_surabaya();
+        }
         buildRecyclerView();
     }
     private void filter(String text) {
@@ -78,6 +86,7 @@ public class MalangActivity extends AppCompatActivity {
 
     public void resto_blitar()
     {
+        restoModels = new ArrayList<>();
         restoModels.add(new RestoModel(R.drawable.waroeng_mak_nyak, "Waroeng Mak Nyak", " Jl. Ir. Soekarno No.184, Bendogerit, Kec. Sananwetan, Kota Blitar, Jawa Timur 66113"));
         restoModels.add(new RestoModel(R.drawable.rm_joglo ,"RM Joglo", " Jalan Maluku No.59, Karangtengah, Kanigoro, Selatan, Kuningan, Kec. Kanigoro, Kota Blitar, Jawa Timur 66171"));
         restoModels.add(new RestoModel(R.drawable.soto_kudus, "Soto Kudus Bu Is", " Jl. Jenderal Sudirman No.30, Kepanjen Lor, Kec. Kepanjenkidul, Kota Blitar, Jawa Timur 66112"));
@@ -85,6 +94,7 @@ public class MalangActivity extends AppCompatActivity {
 
     public void resto_surabaya()
     {
+        restoModels = new ArrayList<>();
         restoModels.add(new RestoModel(R.drawable.asian_king, "Asian King", "  Jl. Manyar Kertoarjo No.78, Manyar Sabrangan, Kec. Mulyorejo, Kota SBY, Jawa Timur 60116"));
         restoModels.add(new RestoModel(R.drawable.primarasa, "Ayam Bakar Primarasa", " Fontage Rd Ahmad Yani No.166, Gayungan, Surabaya City, East Java 60235"));
         restoModels.add(new RestoModel(R.drawable.kahyangan, "Kahyangan Resto", " Jl. Puri Widya Kencana, RW.05, Lidah Kulon, Kec. Lakarsantri, Kota SBY, Jawa Timur 60213"));
@@ -96,6 +106,7 @@ public class MalangActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         adapters = new Adapters(restoModels);
+
 
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapters);
