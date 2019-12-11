@@ -9,10 +9,12 @@
         android:roundIcon="@drawable/top"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.restoActivity"></activity>
+        <activity android:name=".activities.MenuActivity"></activity>
+        <activity android:name=".activities.restoActivity" />
         <activity android:name=".activities.ItemRestoActivity" />
         <activity android:name=".activities.detailActivity" />
         <activity android:name=".activities.MalangActivity" />
+
         <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

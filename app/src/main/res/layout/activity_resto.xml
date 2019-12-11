@@ -20,6 +20,7 @@
         android:id="@+id/gambar"
         android:layout_width="match_parent"
         android:layout_height="180dp"
+        android:onClick="click_detail1"
         ></ImageView>
 
     <TextView
@@ -38,6 +39,13 @@
         android:autoLink="all"
         android:textColor="@color/colorBlack"
         android:textSize="15dp" />
+
+     <Button
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/btn1"
+         android:onClick="btn1"
+         ></Button>
 
     <ImageView
         android:layout_marginTop="20dp"

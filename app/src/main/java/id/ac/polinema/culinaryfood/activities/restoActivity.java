@@ -2,13 +2,16 @@ package id.ac.polinema.culinaryfood.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
 import id.ac.polinema.culinaryfood.R;
+import id.ac.polinema.culinaryfood.models.MenuModel;
 
 public class restoActivity extends AppCompatActivity {
 
@@ -56,6 +59,17 @@ public class restoActivity extends AppCompatActivity {
             image3.setBackgroundResource(R.drawable.nelongso);
             alamat3.setText("Jl. Dieng, Sumberjo, Kalisongo, Kec. Dau, Malang, Jawa Timur 65116");
 
+
+
+
+            image1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(restoActivity.this , MenuActivity.class);
+                    startActivity(intent);
+                }
+            });
+
         }
 
         else if(code.equals("jogja"))
@@ -72,18 +86,31 @@ public class restoActivity extends AppCompatActivity {
             image3.setBackgroundResource(R.drawable.lemah_ledok_garden);
             alamat3.setText("JJl. Cangkringan KM. 0,3, Tirtomartani, Karang Kalasan, Tirtomartani, Kec. Kalasan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55571");
 
-
         }
 
-
-
-
     }
 
-    private void resto_malang() {
 
 
+//    public void click_detail1(View view) {
+//
+//        Bundle extras = getIntent().getExtras();
+//        String code="";
+//
+//        if(extras!=null)
+//        {
+//            code = extras.getString("kode_resto");
+//        }
+//
+//        Intent intent = new Intent(this,MenuModel.class);
+//        startActivity(intent);
+//
+//    }
 
+    public void btn1(View view) {
+
+        Intent intent = new Intent(this , MenuActivity.class);
+        intent.putExtra("kode_resto","jejemuran");
+        startActivity(intent);
     }
-
 }
