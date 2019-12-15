@@ -32,6 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent LoginIntent = new Intent(RegisterActivity.this,LoginActivity.class);
                 startActivity(LoginIntent);
+                finish();
             }
         });
         reg.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +50,7 @@ public class RegisterActivity extends AppCompatActivity {
                             Toast.makeText(RegisterActivity.this,"You have registered",Toast.LENGTH_SHORT).show();
                             Intent moveToLogin = new Intent(RegisterActivity.this,LoginActivity.class);
                             startActivity(moveToLogin);
+                            finish();
                         }
                         else{
                             Toast.makeText(RegisterActivity.this,"Registeration Error",Toast.LENGTH_SHORT).show();

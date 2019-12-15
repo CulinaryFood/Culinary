@@ -39,6 +39,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(i);
+                finish();
             }
         });
         log.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +52,7 @@ public class LoginActivity extends AppCompatActivity {
 //                    Toast.makeText(getApplicationContext(),"Login Successfully", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(i);
+                    finish();
 //                    Boolean insert = db.insert(e,p);
 //                    if (insert==true){
 ////                        Toast.makeText(getApplicationContext(),"Login Successfully", Toast.LENGTH_SHORT).show();

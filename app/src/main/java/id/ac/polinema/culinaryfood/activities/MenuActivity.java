@@ -108,6 +108,7 @@ public class MenuActivity extends AppCompatActivity {
     private void resto_soto_kudus() {
         menuModels =  new ArrayList<>();
         menuModels.add(new MenuModel(R.drawable.soto1,"Menu Soto Kudus Blitar.","Rp."));
+        menuModels.add(new MenuModel(R.drawable.jejamuran8,"Teh Panas","Rp.3000"));
     }
 
     private void resto_rm_joglo() {
@@ -120,6 +121,8 @@ public class MenuActivity extends AppCompatActivity {
         menuModels.add(new MenuModel(R.drawable.maknyak1,"Capjay Blitar","Rp.25000"));
         menuModels.add(new MenuModel(R.drawable.maknyak2,"Gurami Goreng","Rp.45000"));
         menuModels.add(new MenuModel(R.drawable.maknyak3,"Es Buah","Rp.12000"));
+        menuModels.add(new MenuModel(R.drawable.jejamuran8,"Teh Panas","Rp.6000"));
+        menuModels.add(new MenuModel(R.drawable.jejamuran7,"Es Jeruk","Rp.6000"));
     }
 
     //surabaya
@@ -127,6 +130,8 @@ public class MenuActivity extends AppCompatActivity {
         menuModels =  new ArrayList<>();
         menuModels.add(new MenuModel(R.drawable.kayangansby1,"Oseng Gurame","Rp.75000"));
         menuModels.add(new MenuModel(R.drawable.kayangansby2,"Gurame Kribo (Krispi Boow)","Rp.75000"));
+        menuModels.add(new MenuModel(R.drawable.jejamuran8,"Teh Panas","Rp.15000"));
+        menuModels.add(new MenuModel(R.drawable.jejamuran7,"Ice Orange","Rp.15000"));
 
     }
 
@@ -167,12 +172,22 @@ public class MenuActivity extends AppCompatActivity {
     private void ledok_garden() {
         menuModels =  new ArrayList<>();
         menuModels.add(new MenuModel(R.drawable.ledokgarden1,"Nasgor Special Lemah Ledok","Rp.35000"));
-
+        menuModels.add(new MenuModel(R.drawable.ledokgarden2,"Ayam Bakar Bumbu Rujak","Rp.3000 / Potong"));
+        menuModels.add(new MenuModel(R.drawable.ledokgarden3,"Sop Iga Sapi","Rp.75000"));
+        menuModels.add(new MenuModel(R.drawable.ledokgarden4,"Ikan Bakar Mozarella","Rp.80000"));
+        menuModels.add(new MenuModel(R.drawable.ledokgarden8,"Ikan Gurame Bakar Madu","Rp.85000"));
+        menuModels.add(new MenuModel(R.drawable.ledokgarden5,"Infuse Water Orange","Rp.28000"));
+        menuModels.add(new MenuModel(R.drawable.ledokgarden6,"Hot Chocolate Java","Rp.25000"));
+        menuModels.add(new MenuModel(R.drawable.ledokgarden7,"Ice Cappucino ","Rp.25000"));
     }
-
     private void resto_pelem_golek() {
         menuModels =  new ArrayList<>();
-
+        menuModels.add(new MenuModel(R.drawable.palemgolek1,"Fried fish with bbq sauce","Rp.65000"));
+        menuModels.add(new MenuModel(R.drawable.palemgolek2,"Deep fried tofu","Rp.18000"));
+        menuModels.add(new MenuModel(R.drawable.palemgolek3,"Salted egg yolk squid","Rp.30000"));
+        menuModels.add(new MenuModel(R.drawable.palemgolek4,"Honey grilles squids","Rp.42000"));
+        menuModels.add(new MenuModel(R.drawable.jejamuran8,"Hot Tea","Rp.12000"));
+        menuModels.add(new MenuModel(R.drawable.jejamuran7,"Ice Orange","Rp.12000"));
     }
 
     private void buildRecyclerView() {
@@ -180,8 +195,6 @@ public class MenuActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         newAdapters = new NewAdapters(menuModels);
-
-
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(newAdapters);
     }

@@ -7,52 +7,68 @@
     tools:context="id.ac.polinema.culinaryfood.activities.LoginActivity"
     android:orientation="vertical"
     android:id="@+id/container"
-    android:background="#123456"
+    android:background="@color/colorwhite"
     android:gravity="center_horizontal">
-
 
 
     <LinearLayout
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:foreground="#c2ffffff"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="170dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:text="REGISTER"
+            android:textColor="@color/colormaroon"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30dp"></TextView>
 
         <EditText
             android:id="@+id/edittext_username"
-            android:layout_width="190dp"
-            android:layout_height="40dp"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
             android:layout_marginTop="10dp"
             android:paddingLeft="2dp"
             android:background="#ffffff"
+            android:textColor="@color/colorBlack"
             android:hint="username"/>
 
         <EditText
             android:id="@+id/edittext_password"
-            android:layout_width="190dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
             android:background="#ffffff"
-
+            android:textColor="@color/colorBlack"
+            android:inputType="textPassword"
+            android:ems="10"
             android:hint="password"/>
         <EditText
             android:id="@+id/edittext_conf_password"
-            android:layout_width="190dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
             android:background="#ffffff"
+            android:textColor="@color/colorBlack"
+            android:inputType="textPassword"
+            android:ems="10"
             android:hint="Confirm password"/>
     </LinearLayout>
 
     <Button
         android:id="@+id/button_register"
-        android:layout_width="190dp"
+        android:layout_width="210dp"
         android:layout_height="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:background="#04ea00"
         android:textColor="#ffffff"
-        android:text="Regiser"/>
+        android:textStyle="bold"
+        android:text="Register"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -63,7 +79,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="35dp"
-            android:textColor="#ffffff"
+            android:textColor="@color/colorBlack"
             android:text="Already registered"/>
 
         <TextView

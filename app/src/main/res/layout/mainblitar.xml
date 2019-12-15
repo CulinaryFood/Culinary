@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dot_light_screen3">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="320dp"
+            android:src="@drawable/tugu_blitar"
+            android:layout_gravity="center"
+            android:onClick="handlerClickBlitar"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BLITAR"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:textSize="30dp"
+            android:textStyle="bold"></TextView>
+
+
+    </LinearLayout>
+</RelativeLayout>
