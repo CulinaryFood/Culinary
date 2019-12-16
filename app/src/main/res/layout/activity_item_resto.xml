@@ -29,7 +29,7 @@
     <TextView
         android:id="@+id/alamat"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="50dp"
         android:autoLink="all"
         android:textColor="@color/colorBlack"
         android:textSize="15dp"

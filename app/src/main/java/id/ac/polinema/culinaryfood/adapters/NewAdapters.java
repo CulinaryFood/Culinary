@@ -47,9 +47,6 @@ public class NewAdapters extends RecyclerView.Adapter<NewAdapters.MyHolder> impl
         holder.image.setImageResource(menuModel.getImage());
         holder.menu.setText(menuModel.Menu);
         holder.harga.setText(menuModel.harga);
-
-
-
     }
 
     @Override
@@ -57,6 +54,10 @@ public class NewAdapters extends RecyclerView.Adapter<NewAdapters.MyHolder> impl
         return (menuModelList != null) ? menuModelList.size() : 0;
     }
 
+    public void filterList(List<MenuModel> filteredList) {
+        menuModelList = filteredList;
+        notifyDataSetChanged();
+    }
     @Override
     public Filter getFilter() {
         return Filters;
@@ -84,7 +85,9 @@ public class NewAdapters extends RecyclerView.Adapter<NewAdapters.MyHolder> impl
 
         @Override
         protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
-
+            menuModelList.clear();
+            menuModelList.addAll((List) filterResults.values);
+            notifyDataSetChanged();
         }
     };
 
@@ -92,18 +95,15 @@ public class NewAdapters extends RecyclerView.Adapter<NewAdapters.MyHolder> impl
         public ImageView image;
         public TextView menu;
         public TextView harga;
-        public RelativeLayout layout_parent;
+//        public RelativeLayout layout_parent;
         public MyHolder(@NonNull View itemView) {
             super(itemView);
             image =itemView.findViewById(R.id.gambar);
             menu = itemView.findViewById(R.id.name);
             harga = itemView.findViewById(R.id.harga);
-            layout_parent = itemView.findViewById(R.id.parent_Layout);
+//            layout_parent = itemView.findViewById(R.id.parent_Layout);
         }
     }
-    public void filterList(List<MenuModel> filteredList) {
-        menuModelList = filteredList;
-        notifyDataSetChanged();
-    }
+
 
 }

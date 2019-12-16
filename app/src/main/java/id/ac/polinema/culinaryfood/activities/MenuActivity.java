@@ -1,10 +1,15 @@
 package id.ac.polinema.culinaryfood.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.inputmethod.EditorInfo;
 
 import java.util.ArrayList;
 
@@ -113,7 +118,11 @@ public class MenuActivity extends AppCompatActivity {
 
     private void resto_rm_joglo() {
         menuModels =  new ArrayList<>();
-
+        menuModels.add(new MenuModel(R.drawable.joglo2,"Gurame Asam Manis","Rp.35000"));
+        menuModels.add(new MenuModel(R.drawable.joglo1,"Tumis Kangkung","Rp.14000"));
+        menuModels.add(new MenuModel(R.drawable.joglo4,"Jamur Crispy","Rp.10000"));
+        menuModels.add(new MenuModel(R.drawable.joglo3,"Es Dawet","Rp.8000"));
+        menuModels.add(new MenuModel(R.drawable.jejamuran8,"Teh Panas","Rp.4000"));
     }
 
     private void resto_warung_mak_nyak() {
@@ -124,6 +133,7 @@ public class MenuActivity extends AppCompatActivity {
         menuModels.add(new MenuModel(R.drawable.jejamuran8,"Teh Panas","Rp.6000"));
         menuModels.add(new MenuModel(R.drawable.jejamuran7,"Es Jeruk","Rp.6000"));
     }
+
 
     //surabaya
     private void resto_khayangan() {
@@ -136,10 +146,18 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     private void resto_primarasa() {
+        menuModels =  new ArrayList<>();
+        menuModels.add(new MenuModel(R.drawable.primarasa3,"Menu Soto Kudus Blitar.","Rp."));
+        menuModels.add(new MenuModel(R.drawable.primarasa4,"Menu Soto Kudus Blitar.","Rp."));
+        menuModels.add(new MenuModel(R.drawable.primarasa5,"Menu Soto Kudus Blitar.","Rp."));
+        menuModels.add(new MenuModel(R.drawable.primarasa2,"Menu Soto Kudus Blitar.","Rp."));
+        menuModels.add(new MenuModel(R.drawable.primarasa1,"Es Dawet","Rp.10000"));
+
     }
 
     private void resto_asian_king() {
     }
+
 
     //malang
     private void resto_bensu() {
@@ -172,7 +190,7 @@ public class MenuActivity extends AppCompatActivity {
     private void ledok_garden() {
         menuModels =  new ArrayList<>();
         menuModels.add(new MenuModel(R.drawable.ledokgarden1,"Nasgor Special Lemah Ledok","Rp.35000"));
-        menuModels.add(new MenuModel(R.drawable.ledokgarden2,"Ayam Bakar Bumbu Rujak","Rp.3000 / Potong"));
+        menuModels.add(new MenuModel(R.drawable.ledokgarden2,"Ayam Bakar Bumbu Rujak","Rp.30000 / Potong"));
         menuModels.add(new MenuModel(R.drawable.ledokgarden3,"Sop Iga Sapi","Rp.75000"));
         menuModels.add(new MenuModel(R.drawable.ledokgarden4,"Ikan Bakar Mozarella","Rp.80000"));
         menuModels.add(new MenuModel(R.drawable.ledokgarden8,"Ikan Gurame Bakar Madu","Rp.85000"));
@@ -199,5 +217,28 @@ public class MenuActivity extends AppCompatActivity {
         recyclerView.setAdapter(newAdapters);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_check, menu);
 
+        MenuItem searchItem = menu.findItem(R.id.search);
+        SearchView searchView = (SearchView) searchItem.getActionView();
+
+        searchView.setImeOptions(EditorInfo.IME_ACTION_DONE);
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                newAdapters.getFilter().filter(newText);
+                return false;
+            }
+        });
+        return true;
+    }
 }
