@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import id.ac.polinema.culinaryfood.R;
+import id.ac.polinema.culinaryfood.adapters.DatabaseHelper;
 
 public class RegisterActivity extends AppCompatActivity {
     DatabaseHelper db;

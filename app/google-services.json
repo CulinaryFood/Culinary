@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1016702860341",
+    "firebase_url": "https://culinaryfood-c1f9b.firebaseio.com",
+    "project_id": "culinaryfood-c1f9b",
+    "storage_bucket": "culinaryfood-c1f9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016702860341:android:392e41016157a54475057c",
+        "android_client_info": {
+          "package_name": "id.ac.polinema.culinaryfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016702860341-sunqef66equ2rqqnb4cv1c35vjjcdp2a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.ac.polinema.culinaryfood",
+            "certificate_hash": "b84559a775daa88d90251e1cdb04e5ec9f726510"
+          }
+        },
+        {
+          "client_id": "1016702860341-ge24e66cehvmmrfbqlrg6ifiikh1kvta.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmlf5UDaja1v07ewZQPeBASs98p-N6FMg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016702860341-ge24e66cehvmmrfbqlrg6ifiikh1kvta.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

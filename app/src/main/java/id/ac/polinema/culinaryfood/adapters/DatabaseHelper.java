@@ -1,4 +1,4 @@
-package id.ac.polinema.culinaryfood.activities;
+package id.ac.polinema.culinaryfood.adapters;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -16,7 +16,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_3="Password";
 
     public DatabaseHelper(@Nullable Context context) {
-        super(context, "DATABASE_NAMEy", null, 1);
+        super(context, DATABASE_NAME, null, 1);
     }
 
     @Override

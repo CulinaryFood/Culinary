@@ -44,8 +44,6 @@ public class Adapters extends RecyclerView.Adapter<Adapters.MyViewHolder> implem
         return viewHolder;
     }
 
-
-
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
@@ -60,15 +58,10 @@ public class Adapters extends RecyclerView.Adapter<Adapters.MyViewHolder> implem
                 Intent intent = new Intent(mContext,detailActivity.class);
                 intent.putExtra("name", mName);
                 intent.putExtra("alamat", mAlamat);
-
                 mContext.startActivity(intent);
 
             }
         });
-
-
-
-
     }
 
     @Override
@@ -88,8 +81,6 @@ public class Adapters extends RecyclerView.Adapter<Adapters.MyViewHolder> implem
             name = itemView.findViewById(R.id.name);
             alamat = itemView.findViewById(R.id.alamat);
             layout_parent = itemView.findViewById(R.id.parent_Layout);
-
-
         }
     }
     public void filterList(List<RestoModel> filteredList) {

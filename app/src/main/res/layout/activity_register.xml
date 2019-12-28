@@ -7,89 +7,101 @@
     tools:context="id.ac.polinema.culinaryfood.activities.LoginActivity"
     android:orientation="vertical"
     android:id="@+id/container"
-    android:background="@color/colorwhite"
+    android:background="#faf5e4"
     android:gravity="center_horizontal">
 
-
-    <LinearLayout
-        android:gravity="center_horizontal"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="170dp">
-
-        <TextView
+        app:cardBackgroundColor="#ECF0F1"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="150dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:gravity="center_horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="30dp"
-            android:text="REGISTER"
-            android:textColor="@color/colormaroon"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:textSize="30dp"></TextView>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/edittext_username"
-            android:layout_width="210dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="10dp"
-            android:paddingLeft="2dp"
-            android:background="#ffffff"
-            android:textColor="@color/colorBlack"
-            android:hint="username"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:text="REGISTER"
+                android:textColor="@color/colormaroon"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:textSize="30dp"></TextView>
 
-        <EditText
-            android:id="@+id/edittext_password"
-            android:layout_width="210dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="15dp"
-            android:background="#ffffff"
-            android:textColor="@color/colorBlack"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:hint="password"/>
-        <EditText
-            android:id="@+id/edittext_conf_password"
-            android:layout_width="210dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="15dp"
-            android:background="#ffffff"
-            android:textColor="@color/colorBlack"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:hint="Confirm password"/>
-    </LinearLayout>
+            <EditText
+                android:id="@+id/edittext_username"
+                android:layout_width="210dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="2dp"
+                android:background="#ffffff"
+                android:textColor="@color/colorBlack"
+                android:hint="username"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
 
-    <Button
-        android:id="@+id/button_register"
-        android:layout_width="210dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="25dp"
-        android:background="#04ea00"
-        android:textColor="#ffffff"
-        android:textStyle="bold"
-        android:text="Register"/>
+            <EditText
+                android:id="@+id/edittext_password"
+                android:layout_width="210dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                android:textColor="@color/colorBlack"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:hint="password"/>
+            <EditText
+                android:id="@+id/edittext_conf_password"
+                android:layout_width="210dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="15dp"
+                android:background="#ffffff"
+                android:textColor="@color/colorBlack"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:hint="Confirm password"/>
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="210dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:background="#04ea00"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:text="Register"/>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:textColor="@color/colorBlack"
-            android:text="Already registered"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="Already registered"/>
 
-        <TextView
-            android:id="@+id/textview_login"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:paddingLeft="10dp"
-            android:textStyle="bold"
-            android:textColor="#04ea00"
-            android:text="login"/>
+                <TextView
+                    android:id="@+id/textview_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="#04ea00"
+                    android:text="login"/>
 
-    </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
 </LinearLayout>

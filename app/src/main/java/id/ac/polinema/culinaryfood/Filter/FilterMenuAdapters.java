@@ -1,14 +1,12 @@
-package id.ac.polinema.culinaryfood.adapters;
+package id.ac.polinema.culinaryfood.Filter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -18,22 +16,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 import id.ac.polinema.culinaryfood.R;
-import id.ac.polinema.culinaryfood.activities.detailActivity;
 import id.ac.polinema.culinaryfood.models.MenuModel;
-import id.ac.polinema.culinaryfood.models.RestoModel;
 
-public class NewAdapters extends RecyclerView.Adapter<NewAdapters.MyHolder> implements Filterable {
+public class FilterMenuAdapters extends RecyclerView.Adapter<FilterMenuAdapters.MyHolder> implements Filterable {
     List<MenuModel> menuModelList;
     List<MenuModel> menuModelListFull;
 
-    public NewAdapters(List<MenuModel> menuModelList) {
+    public FilterMenuAdapters(List<MenuModel> menuModelList) {
         this.menuModelList = menuModelList;
         menuModelListFull = new ArrayList<>(menuModelList);
     }
 
     @NonNull
     @Override
-    public NewAdapters.MyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public FilterMenuAdapters.MyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         Context context = parent.getContext();
         LayoutInflater layoutInflater = LayoutInflater.from(context);
         View view = layoutInflater.inflate(R.layout.item_menu, parent, false);
@@ -42,7 +38,7 @@ public class NewAdapters extends RecyclerView.Adapter<NewAdapters.MyHolder> impl
     }
 
     @Override
-    public void onBindViewHolder(@NonNull NewAdapters.MyHolder holder, int position) {
+    public void onBindViewHolder(@NonNull FilterMenuAdapters.MyHolder holder, int position) {
         MenuModel menuModel = menuModelList.get(position);
         holder.image.setImageResource(menuModel.getImage());
         holder.menu.setText(menuModel.Menu);

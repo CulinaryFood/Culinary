@@ -2,7 +2,6 @@ package id.ac.polinema.culinaryfood.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import id.ac.polinema.culinaryfood.R;
+import id.ac.polinema.culinaryfood.adapters.DatabaseHelper;
 
 public class LoginActivity extends AppCompatActivity {
     EditText email,pass;

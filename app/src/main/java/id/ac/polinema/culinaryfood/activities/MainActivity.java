@@ -2,7 +2,6 @@ package id.ac.polinema.culinaryfood.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
@@ -33,8 +32,9 @@ public class MainActivity extends AppCompatActivity {
         layouts = new int[]{
                 R.layout.mainmalang,
                 R.layout.mainjogja,
-                R.layout.mainsurabaya,
-                R.layout.mainblitar};
+                R.layout.mainsurabaya
+//                ,R.layout.mainblitar
+                };
 
         addBottomDots(0);
 
@@ -61,26 +61,27 @@ public class MainActivity extends AppCompatActivity {
         if (dots.length > 0)
             dots[currentPage].setTextColor(colorsActive[currentPage]);
     }
-    public void handlerClickBlitar(View view) {
-        Intent intent = new Intent(this,restoActivity.class);
-        intent.putExtra("kode_resto","blitar");
-        startActivity(intent);
-    }
+
+//    public void handlerClickBlitar(View view) {
+//        Intent intent = new Intent(this, restoscrollviewActivity.class);
+//        intent.putExtra("kode_resto","blitar");
+//        startActivity(intent);
+//    }
 
     public void handlerClickSurabaya(View view) {
-        Intent intent = new Intent(this,restoActivity.class);
+        Intent intent = new Intent(this, restoscrollviewActivity.class);
         intent.putExtra("kode_resto","surabaya");
         startActivity(intent);
     }
 
     public void handlerClickMalang(View view) {
-        Intent intent = new Intent(this,restoActivity.class);
+        Intent intent = new Intent(this, restoscrollviewActivity.class);
         intent.putExtra("kode_resto","malang");
         startActivity(intent);
     }
 
     public void handlerClickJogja(View view) {
-        Intent intent = new Intent(this,restoActivity.class);
+        Intent intent = new Intent(this, restoscrollviewActivity.class);
         intent.putExtra("kode_resto","jogja");
         startActivity(intent);
     }
