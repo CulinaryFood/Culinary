@@ -63,6 +63,24 @@ public class restoscrollviewActivity extends AppCompatActivity {
                 }
             });
 
+            alamat2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Uri uriUrl = Uri.parse("https://www.google.com/maps/place/Javanine+Resto/@-7.967386,112.620851,15z/data=!4m2!3m1!1s0x0:0xbc685824a832b05a?sa=X&ved=2ahUKEwjXyaPyq9rmAhXXcn0KHezZBZgQ_BIwGHoECBsQCA");
+                    Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                    startActivity(launchBrowser);
+                }
+            });
+
+            alamat3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Uri uriUrl = Uri.parse("https://www.google.com/maps/place/Hok+Lay/@-7.984563,112.632034,17z/data=!3m1!4b1!4m5!3m4!1s0x2dd62816fc6ce6a1:0xbd8ae99a351756db!8m2!3d-7.984563!4d112.6342227");
+                    Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                    startActivity(launchBrowser);
+                }
+            });
+
 
             image1.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -155,6 +173,34 @@ public class restoscrollviewActivity extends AppCompatActivity {
             image3.setBackgroundResource(R.drawable.lemah_ledok_garden);
             alamat3.setText("Jl. Cangkringan KM. 0,3, Tirtomartani, Karang Kalasan, Tirtomartani, Kec. Kalasan, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55571");
 
+            alamat1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Uri uriUrl = Uri.parse("https://www.google.com/maps/place/Jejamuran/@-7.7054915,110.359584,16.48z/data=!4m5!3m4!1s0x2e7a5f4b00000001:0xb991824588eb34e1!8m2!3d-7.705414!4d110.361254");
+                    Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                    startActivity(launchBrowser);
+                }
+            });
+
+            alamat2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Uri uriUrl = Uri.parse("https://www.google.com/maps/place/Pondok+Makan+Pelem+Golek/@-7.737178,110.3745583,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7a5ed11ec9aa17:0x5b16c2b54fcaa223!8m2!3d-7.737178!4d110.376747");
+                    Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                    startActivity(launchBrowser);
+                }
+            });
+
+            alamat3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Uri uriUrl = Uri.parse("https://www.google.com/maps/place/Lemah+Ledok+Garden+Resto/@-7.7699599,110.4620177,17z/data=!3m1!4b1!4m5!3m4!1s0x2e7a5a67bbb8dc75:0xca448098832b79e8!8m2!3d-7.7699599!4d110.4642064");
+                    Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                    startActivity(launchBrowser);
+                }
+            });
+
+
             image1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -199,6 +245,33 @@ public class restoscrollviewActivity extends AppCompatActivity {
             nama3.setText("Kahyangan Resto");
             image3.setBackgroundResource(R.drawable.kahyangan);
             alamat3.setText("Jl. Puri Widya Kencana, RW.05, Lidah Kulon, Kec. Lakarsantri, Kota SBY, Jawa Timur 60213");
+
+            alamat1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Uri uriUrl = Uri.parse("https://www.google.com/maps/place/Bumi+Surabaya+City+Resort/@-7.2710805,112.7389863,17z/data=!3m1!4b1!4m8!3m7!1s0x2dd7fbdf9a148d5b:0xcc90538be2b721c!5m2!4m1!1i2!8m2!3d-7.2710858!4d112.741175");
+                    Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                    startActivity(launchBrowser);
+                }
+            });
+
+            alamat2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Uri uriUrl = Uri.parse("https://www.google.com/maps/place/Ayam+Bakar+Primarasa/@-7.3302052,112.7281543,17z/data=!3m1!4b1!4m5!3m4!1s0x2dd7fb424d89ca41:0x59c31a204e07b94c!8m2!3d-7.3302105!4d112.730343");
+                    Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                    startActivity(launchBrowser);
+                }
+            });
+
+            alamat3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Uri uriUrl = Uri.parse("https://www.google.com/maps/place/Kahyangan+Resto/@-7.292623,112.654583,15z/data=!4m5!3m4!1s0x0:0x656c90b84eb5f01f!8m2!3d-7.292623!4d112.654583");
+                    Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                    startActivity(launchBrowser);
+                }
+            });
 
             image1.setOnClickListener(new View.OnClickListener() {
                 @Override
