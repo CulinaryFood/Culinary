@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.net.Uri;
 
 import id.ac.polinema.culinaryfood.R;
 
@@ -15,6 +16,8 @@ public class restoscrollviewActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resto);
+
+
 
         ImageView image1 = findViewById(R.id.gambar);
         TextView nama1 = findViewById(R.id.name);
@@ -49,6 +52,16 @@ public class restoscrollviewActivity extends AppCompatActivity {
             nama3.setText("Hok Lay");
             image3.setBackgroundResource(R.drawable.hoklay);
             alamat3.setText("Jl. KH Ahmad Dahlan No.10, Sukoharjo, Kec. Klojen, Kota Malang, Jawa Timur 65118");
+
+
+            alamat1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Uri uriUrl = Uri.parse("https://www.google.com/maps/place/The+Arbanat+Kitchen+Cafe+Lounge/@-7.972211,112.607147,15z/data=!4m5!3m4!1s0x0:0x122f370bc58dee11!8m2!3d-7.972211!4d112.607147");
+                    Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                    startActivity(launchBrowser);
+                }
+            });
 
 
             image1.setOnClickListener(new View.OnClickListener() {
